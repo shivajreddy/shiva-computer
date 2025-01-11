@@ -13,7 +13,7 @@ tags: ["astro", "blogging", "learning in public"]
 
 Published on: 2022-07-01
 
-### UPDATE 2.0
+### UPDATE 3.0
 
 ## This is heading 2
 
