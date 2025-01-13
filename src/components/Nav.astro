@@ -1,0 +1,46 @@
+---
+const navItems = [
+  { name: 'Home', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Blog', link: '/blog' },
+  { name: 'Contact', link: '/contact' },
+];
+---
+<nav>
+  <ul>
+    {navItems.map((item) => (
+      <li>
+        <a href={item.link}>{item.name}</a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>

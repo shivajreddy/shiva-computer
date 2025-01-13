@@ -1,0 +1,16 @@
+---
+import Nav from '../../components/Nav.astro';
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog');
+---
+<Nav/>
+
+<h1>Blog Posts</h1>
+<ul>
+  {blogPosts.map((post) => (
+    <li>
+      <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+    </li>
+  ))}
+</ul>

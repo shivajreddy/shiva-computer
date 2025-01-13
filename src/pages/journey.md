@@ -13,10 +13,9 @@ tags: ["astro", "blogging", "learning in public"]
 
 This address all the things that i am interested in, and want to get better at.
 
-It is important for me to document and outline strictly the technology i want
-to  
-learn and also, define the outcomes that I can measure that I should use to  
-access myself.
+It is important for me to document and outline strictly the technology i want  
+to learn and also, define the outcomes that I can measure that I should use  
+to access myself.
 
 ## Languages
 
@@ -40,9 +39,14 @@ These are the areas that I want to git good at, and
 
 ## Courses
 
-- [ ] <a href="https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI" target="_blank" rel="noopener noreferrer">Nand
-      to Tetris - Part 1</a>
-- [ ] <a href="https://www.youtube.com/playlist?list=PLrDd_kMiAuNmllp9vuPqCuttC1XL9VyVh" target="_blank" rel="noopener noreferrer">Nand
-      to Tetris - Part 2</a>
-- [ ] <a href="https://www.youtube.com/playlist?list=PLhy9gU5W1fvUND_5mdpbNVHC1WCIaABbP" target="_blank" rel="noopener noreferrer">Systems
-      Programming</a>
+- [ ] [Nand to Tetris - Part 1](https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI)
+- [ ] [Nand to Tetris - Part 2](https://www.youtube.com/playlist?list=PLrDd_kMiAuNmllp9vuPqCuttC1XL9VyVh)
+- [ ] [Systems Programming](https://www.youtube.com/playlist?list=PLhy9gU5W1fvUND_5mdpbNVHC1WCIaABbP)
+- [ ] [Systems Programming](https://www.youtube.com/playlist?list=PLhy9gU5W1fvUND_5mdpbNVHC1WCIaABbP)
+- [ ] [x86 Assembly Language](https://www.youtube.com/playlist?list=PLmxT2pVYo5LB5EzTPZGfFN0c2GDiSXgQe)
+
+## Projects
+
+- [ ] Re-Write [Sowon](https://github.com/tsoding/sowon) using
+      [Raylib](https://www.raylib.com/)
+- [ ] Re-Write [Sowon](https://github.com/tsoding/sowon) in Rust
