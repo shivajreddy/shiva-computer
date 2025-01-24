@@ -34,4 +34,5 @@ My Journey into `Handmade Hero`
 Day 01: Jan-09-2025  
 [Intro to C on Windows - Day 1](https://guide.handmadehero.org/intro-to-c/day1/)
 
+16:55 - Basics of CPU, Processors, cores
 
