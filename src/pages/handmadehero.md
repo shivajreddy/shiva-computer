@@ -31,8 +31,21 @@ teaching than a university can ever teach about CS.
 
 
 My Journey into `Handmade Hero`  
-Day 01: Jan-09-2025  
+Jan-24-2025 (my day 01)
 [Intro to C on Windows - Day 1](https://guide.handmadehero.org/intro-to-c/day1/)
+- Basics of CPU, Processors, cores
+- setup visual studio, set up project as windows application project not console project  
 
-16:55 - Basics of CPU, Processors, cores
+Jan-25-2025 (my day 02)
+[Intro to C on Windows - Day 2](https://guide.handmadehero.org/intro-to-c/day2/)
+- how to use 'disassembly' in visual studio
+- How to debug
+- windows expects \r\n, the visual compiler converts \n to \r\n automatically,  
+  but when you want to write/modify a file and want to insert \n, make sure to write  
+  file in binary mode, so that the visual compiler doesn't convert \n to \r\n  
+- basics of assembly and registers. But having gone through this [x86 Assembly with NASM playlist](https://www.youtube.com/playlist?list=PL2EF13wm-hWCoj6tUBGUmrkJmH1972dBB)  
+  atleast the  the first 5 videos has helped a lot of understanding x86 and assembly.
 
+Jan-26-2025 (my day 03)
+[Intro to C on Windows - Day 3](https://guide.handmadehero.org/intro-to-c/day3/)
+- .
