@@ -48,4 +48,65 @@ Jan-25-2025 (my day 02)
 
 Jan-26-2025 (my day 03)
 [Intro to C on Windows - Day 3](https://guide.handmadehero.org/intro-to-c/day3/)
+- How to interact with Debug>Memory window
+- In the memory window
+  - The first first column has the names of the addresses
+  - each column in the row(not the address names) represents a single byte.   
+   the address of the first byte is address for the first byte in that row  
+   0x0000007FE0EFF8E2  254 127   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  翾.........  
+   here  0x0000007FE0EFF8E2 is the address of 254, and second byte that holds the value 127 it's address is 0x0000007FE0EFF8E3  
+- In watch window you can get the address of a variable, just like how you do in code, say there was `int x`, and in watch  
+  window i can set the name to `&x` and this will tell the byte address of `x`  
+- x-ghz is x-billion cycles per 1 second. Ex: 3 GHz = 3 × 10^9 cycles per second.
+- Communicating with Memory is super slow, and thats why new technology 
+- Latency:
+    - Latency refers to the delay or time it takes for a single operation to complete.
+    - In the context of memory, it's the time required to access a piece of data once a request is made.
+    - Measured in units like nanoseconds (ns) or clock cycles.
+  Example: If your memory latency is 20ns, it takes 20ns to start retrieving the first piece of data after requesting it.
+- Bandwidth:
+    - Bandwidth is the rate at which data can be transferred.
+    - In memory, it's measured in bytes per second or bits per second (e.g., GB/s).
+    - Bandwidth defines how much data can flow between the memory and CPU over a period of time.
+  Example: A memory module with 50 GB/s bandwidth can transfer 50 gigabytes of data per second.
+
+Latency and Bandwidth
+  - Latency:
+    - Latency refers to the delay or time it takes for a single operation to complete.
+    - In the context of memory, it's the time required to access a piece of data once a request is made.
+    - Measured in units like nanoseconds (ns) or clock cycles.
+    - Example: If your memory latency is 20ns, it takes 20ns to start retrieving the first piece of data after requesting it.
+  - Bandwidth:
+    - Bandwidth is the rate at which data can be transferred.
+    - In memory, it's measured in bytes per second or bits per second (e.g., GB/s).
+    - Bandwidth defines how much data can flow between the memory and CPU over a period of time.
+    - Example: A memory module with 50 GB/s bandwidth can transfer 50 gigabytes of data per second.
+
+Relationship Between Latency and Bandwidth
+    - Latency is about "how fast the first byte arrives."
+    - Bandwidth is about "how many bytes arrive in a given time."
+
+Imagine a water pipe analogy:
+    - Latency: The time it takes for the first drop of water to come out after turning on the tap.
+    - Bandwidth: The volume of water that can flow out of the pipe per second.
+
+How Memory Uses Higher Bandwidth to Cope with Slower Latency ?
+- Modern memory systems leverage high bandwidth to hide or mitigate the effects of high latency. This works as follows:
+    - Burst Transfers:
+        - Memory doesn't fetch just one piece of data at a time. Instead, it retrieves a block of data   
+          in one burst (e.g., a cache line, typically 64 bytes).  
+        - Once the initial latency is overcome, the subsequent bytes of the block are transferred quickly,   
+          utilizing the full bandwidth.
+        - Example: If latency is 100 cycles but bandwidth is high, the first byte is delayed, but the rest of the 
+             block streams in efficiently.
+    - Parallelism:
+        - Modern memory (e.g., DDR, GDDR, HBM) operates in parallel, fetching multiple data chunks at once across wide buses.
+        - By overlapping operations, the system hides latency with high throughput.
+    - Prefetching:
+        - Processors predict which memory data will be needed soon and fetch it ahead of time.
+        - Even if latency is high, prefetching ensures the data is ready by the time the CPU needs it.
+
+
+Jan-26-2025 (my day 03)
+[Intro to C on Windows - Day 4](https://guide.handmadehero.org/intro-to-c/day4/)
 - .
