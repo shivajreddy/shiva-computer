@@ -109,4 +109,7 @@ How Memory Uses Higher Bandwidth to Cope with Slower Latency ?
 
 Jan-26-2025 (my day 03)
 [Intro to C on Windows - Day 4](https://guide.handmadehero.org/intro-to-c/day4/)
-- .
+- I have a lot of gaps in terms of understanding assembly. So reading assembly code on disassembly is confusing.
+  - the memory view questions: i know each column is a byte, hence it can hold [0,255] and can be  
+    represented in hexa with just 2 characters, where 0=0, 255=FF. But when i say a number like 69240, how is this stored in the memory.
+  - and how is string stored, and how is user types stored?
