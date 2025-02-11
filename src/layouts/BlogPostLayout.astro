@@ -1,12 +1,14 @@
 ---
 import Nav from "../components/Nav.astro"
 
-import Layout from '../layouts/BlogPostLayout.astro';
+import Layout from '../layouts/Layout.astro';
 import '../styles/styles.css';
 // Props passed from Markdown files
 const {frontmatter} = Astro.props;
 ---
 
+
+<Layout>
 <Nav/>
 
 <article>
@@ -18,3 +20,4 @@ const {frontmatter} = Astro.props;
 
 </article>
 
+</Layout>

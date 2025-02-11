@@ -1,13 +1,17 @@
 ---
 import Nav from "../components/Nav.astro"
 
+import Layout from '../layouts/Layout.astro';
+import '../styles/styles.css';
+
 // Props passed from Markdown files
 const {frontmatter} = Astro.props;
 ---
+<Layout>
 
 <Nav/>
 
-<div>
+<article>
   <h1>{frontmatter.title}</h1>
   <p><i>Published on:{frontmatter.date}</i></p>
   <hr/>
@@ -15,4 +19,4 @@ const {frontmatter} = Astro.props;
   <slot/> <!-- your content is injected here -->
 
 </article>
-
+</Layout>
