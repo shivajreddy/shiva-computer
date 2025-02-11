@@ -1,0 +1,25 @@
+---
+import Nav from '../../components/Nav.astro';
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/styles.css';
+
+// Fetch all Markdown projects inside /projects
+const projects = await Astro.glob('./*.md');
+
+// Sort posts by date (optional)
+projects.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+---
+<Layout>
+<Nav/>
+
+<h1>Projects</h1>
+<ul>
+  <p>Total projects: {projects.length}</p>
+  {projects.map((project) => (
+    <li>
+      <a href={`${project.url}`}>{project.frontmatter.title}</a>
+    </li>
+  ))}
+</ul>
+
+</Layout>

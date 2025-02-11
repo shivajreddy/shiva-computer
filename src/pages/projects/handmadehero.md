@@ -3,6 +3,7 @@ title: "Hand Made Hero"
 pubDate: 2025-01-24
 description: "My journey for the 'Hand Made Hero'"
 author: "shiva"
+layout: "../../layouts/ProjectLayout.astro"
 tags: ["Projects"]
 ---
 

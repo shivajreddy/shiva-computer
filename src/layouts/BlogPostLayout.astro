@@ -1,0 +1,20 @@
+---
+import Nav from "../components/Nav.astro"
+
+import Layout from '../layouts/BlogPostLayout.astro';
+import '../styles/styles.css';
+// Props passed from Markdown files
+const {frontmatter} = Astro.props;
+---
+
+<Nav/>
+
+<article>
+  <h1>{frontmatter.title}</h1>
+  <p><i>Published on:{frontmatter.date}</i></p>
+  <hr/>
+
+  <slot/> <!-- your content is injected here -->
+
+</article>
+

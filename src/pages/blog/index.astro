@@ -1,16 +1,20 @@
 ---
 import Nav from '../../components/Nav.astro';
-import { getCollection } from 'astro:content';
 
-const blogPosts = await getCollection('blog');
+// Fetch all Markdown posts inside /blog
+const blogPosts = await Astro.glob('./*.md');
+
+// Sort posts by date (optional)
+blogPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 ---
 <Nav/>
 
-<h1>Blog Posts...</h1>
+<h1>Blog Posts</h1>
 <ul>
+  <p>Total posts: {blogPosts.length}</p>
   {blogPosts.map((post) => (
     <li>
-      <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+      <a href={`${post.url}`}>{post.frontmatter.title}</a>
     </li>
   ))}
 </ul>
