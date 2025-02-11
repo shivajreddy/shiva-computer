@@ -3,51 +3,18 @@ import { getCollection } from 'astro:content';
 import Nav from '../components/Nav.astro';
 import '../styles/styles.css';
 
-// Fetch all blog posts and sort them by date (newest first)
-const allPosts = await getCollection('blog');
-console.log(allPosts);
-const recentPosts = allPosts
-  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
-  .slice(0, 5); // Limit to 5 posts
 ---
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Site</title>
+    <title>shiva</title>
   </head>
   <body>
       <Nav/>
 
     <main>
-      <section id="hero">
-        <p>
-          Hi, I'm Shiva. I write about technology, programming, and more.
-        </p>
-        <a href="/about" class="button">Learn More About Me</a>
-      </section>
-
-      <section id="recent-posts">
-        <h2>Recent Blog Posts</h2>
-        <ul>
-          {recentPosts.map((post) => (
-            <li>
-              <a href={`/blog/${post.slug}`}>{post.data.title}</a>
-              <p>{new Date(post.data.date).toLocaleDateString()}</p>
-            </li>
-          ))}
-        </ul>
-        <a href="/blog" class="button">View All Blog Posts</a>
-      </section>
-
-      <section id="contact">
-        <h2>Get In Touch</h2>
-        <p>
-          Feel free to reach out if you'd like to collaborate or have any
-          questions!
-        </p>
-        <a href="/contact" class="button">Contact Me</a>
-      </section>
+      <h1>Hello, World!</h1>
     </main>
 
     <footer>
