@@ -55,3 +55,18 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+.pdf-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto; /* Allows horizontal scrolling */
+}
+
+.pdf-viewer {
+  width: 100%; 
+  min-width: 600px; /* Ensures proper scaling */
+  height: 80vh; /* Adjust based on preference */
+  border: none;
+}
+
+
